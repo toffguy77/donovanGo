@@ -10,9 +10,9 @@ func TestCelsius_String(t *testing.T) {
 		c    Celsius
 		want string
 	}{
-		{"Boiling point of water", 100, "100°C"},
-		{"Melting point of ice", 0, "0°C"},
-		{"Typical human body temperature", 37.0, "37°C"},
+		{"Boiling point of water", 100, "100.00°C"},
+		{"Melting point of ice", 0, "0.00°C"},
+		{"Typical human body temperature", 37.0, "37.00°C"},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
@@ -29,9 +29,9 @@ func TestFahrenheit_String(t *testing.T) {
 		f    Fahrenheit
 		want string
 	}{
-		{"Boiling point of water", 212, "212°F"},
-		{"Melting point of ice", 32, "32°F"},
-		{"Typical human body temperature", 98.6, "98.6°F"},
+		{"Boiling point of water", 212, "212.00°F"},
+		{"Melting point of ice", 32, "32.00°F"},
+		{"Typical human body temperature", 98.6, "98.60°F"},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
