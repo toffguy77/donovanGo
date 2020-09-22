@@ -31,7 +31,7 @@ jobs:
         fi
 
     - name: Build topic2
-      run: go build -v ./topic2
+      run: go build -v ./topic2/tempconv
 
     - name: Test topic2
-      run: go test -v ./topic2
+      run: go test -v ./topic2/tempconv
