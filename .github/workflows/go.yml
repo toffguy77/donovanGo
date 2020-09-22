@@ -30,8 +30,8 @@ jobs:
             dep ensure
         fi
 
-    - name: Build topic2
-      run: go build -v ./topic2/tempconv
+    - name: Build
+      run: go build -v ./...
 
-    - name: Test topic2
-      run: go test -v ./topic2/tempconv
+    - name: Test
+      run: go test -v ./...
