@@ -16,7 +16,7 @@ func main() {
 //!+handler
 // handler echoes the HTTP request.
 func handler(w http.ResponseWriter, r *http.Request) {
-	log.Printf("got new request: %v %v %v\n", r.Method, r.URL.String, r.RemoteAddr)
+	log.Printf("got new request from %v\n", r.RemoteAddr)
 	w.Header().Set("Content-Type", "image/svg+xml")
 	surface := Surface()
 
